@@ -1,0 +1,15 @@
+body{
+  font-family: 'Helvetica';
+  font-size: 16pt;
+  margin: 2EM;
+  background-color: #EEE;
+  color: #333;
+}
+
+h1{
+  text-align: center
+}
+
+img {
+  width: 300px;
+}
