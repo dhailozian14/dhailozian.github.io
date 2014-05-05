@@ -4,9 +4,13 @@ body{
   margin: 2EM;
   background-color: #EEE;
   color: #333;
-  text-align: center
+  text-align: center;
 }
 
 img {
   width: 300px;
+}
+
+li {
+  text-align: center;
 }
