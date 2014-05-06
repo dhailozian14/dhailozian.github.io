@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>Stuff</title>
-		<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
-	</head>
-	<body>
+        <head>
+                <meta charset="utf-8" />
+                <title>Stuff</title>
+                <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" > </script>
+        </head>
+        <body>
 
-		<h1>About Me</h1>
-			<p>My name is Daniel Hailozian, I go to Saint Mary's College High School and I am 18 years old.</p>
+                <h1>About Me</h1>
+                        <p>My name is Daniel Hailozian, I go to Saint Mary's College High School and I am 18 years old.</p>
 
-		<h1>My favorite animal</h1>
-			<img alt="Puppy" src="http://www.dogwallpapers.net/wallpapers/coton-de-tulear-photo.jpg" />
+                <h1>My favorite animal</h1>
+                        <img alt="Puppy" src="http://www.dogwallpapers.net/wallpapers/coton-de-tulear-photo.jpg" />
 
-		<h1>My Hobbies</h1>
-			<p> My hobbies include photography, building computers, gaming and reading.
+                <h1>My Hobbies</h1>
+                        <p> My hobbies include photography, building computers, gaming and reading.
 
-		<h1>Random Facts About Me</h1>
-			<ul>
-				<li>I was scared of the dark when I was little</li>
-				<li>I've visited the Philippines three times</li>
-				<li>My dog's name is Silly</li>
-				<li>My favorite AND the best movie is Frozen</li>
-			</ul>
+                <h1>Random Facts About Me</h1>
 
-		<h1>My favorite website</h1>
-			<a href="http//www.reddit.com/">Reddit: The Front Page of the Internet </a>
+                        <ul>
+                                <li>I was scared of the dark when I was little</li>
+                                <li>I've visited the Philippines three times</li>
+                                <li>My dog's name is Silly</li>
+                                <li>My favorite AND the best movie is Frozen</li>
+                        </ul>
 
-		<h1>My favorite Videos </h1>
+                <p id="foo">Hidden Information</p>
+                <input type="button" onclick="slideDown()" value="Show Hidden Information" />
+                <br>
+                <input type="button" onclick="slideUp()" value="Hide Information" />
+                          
+                <script type="text/javascript">
+                        function slideDown() {
+                                $("#foo").html("I'm also going to UCSC and have more than 15 relatives in the Philippines.");
+                                $("#foo").slideDown();
+                  }
+                        function slideUp() {
+                                $("#foo").html("Hiding Information");
+                                $("#foo").slideUp();
+                    }                        
+                          </script>
 
-		
-	</body>
-</html>
+                <h1>My favorite website</h1>
+                        <a href="http//www.reddit.com/">Reddit: The Front Page of the Internet </a>
+                <h1> My Lryics </h1>
+                  <a href+"INSERT LYRICS HERE">"Let it Go" </a>  
+
+                <h1>My favorite videos </h1>
+                        <iframe class="youtube-player" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/moSFlvxnbgk" frameborder="0">
+</iframe>
+
+        </body>
