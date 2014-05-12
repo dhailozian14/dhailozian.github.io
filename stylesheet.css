@@ -11,6 +11,7 @@ img {
   width: 300px;
 }
 
-li {
+ul {
   text-align: center;
+  list-style-position: inside;
 }
