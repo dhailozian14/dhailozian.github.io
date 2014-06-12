@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script data-require="processing.js@*" data-semver="1.4.1" src="//cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.1/processing.min.js"></script>
+    <script type="text/processing" data-processing-target="targetcanvas">
+      void setup() {
+        size(400, 400);
+        frameRate(1000);
+        noStroke();
+        strokeWeight(1);
+        
+        fill(1, 1, 1, 255);
+        stroke(0);
+        ellipse(width/2, height/2, 400, 400);
+      }
+      
+      
+      var dot = 0;
+      var all= 0;
+
+      void draw() {
+      
+        var randomX = random(-1,1);
+        var randomY = random(-1,1);
+
+        var plotX = map(randomX, -1, 1, 0, 400);
+        var plotY = map(randomY, -1, 1, 0, 400);
+        
+        var d = dist(0, 0, randomX, randomY);
+    
+      if(d < 1) {
+      
+        dot += 1;
+        stroke(255, 2, 255);
+          } else {
+        stroke(1, 1, 255);
+          }
+    
+      strokeWeight(5);
+      point(plotX, plotY);
+      all += 1;
+    
+      strokeWeight(1);
+      stroke(0, 0, 0);
+      fill(1, 1, 1);
+      rect(340, 380, 50, 30);
+      
+      fill(255, 0, 0);
+      textSize(17);
+      var pi = dot*4/all;
+      text(pi, 345, 400);
+     };
+              
+    </script>    
+  </head>
+
+  <body>
+    <canvas id="targetcanvas" width="400" height="400"></canvas>
+  </body>
+</html>
