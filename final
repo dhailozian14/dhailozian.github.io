@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="utf-8" />
+                <title>Stuff</title>
+                <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" > </script>
+        </head>
+        <body>
+
+          <h1> Welcome to the buttons website! </h1>
+          <h4> Click a button to... </h4>
+          
+           <button onclick="window.location='https://www.youtube.com/watch?v=f-IOUuIxejA';">Go to Youtube to watch a video!</button>
+           <br>
+           <button onclick="window.location='http://news.google.com/';">Go to read the News!</button>
+           <br>
+           <button onclick="window.location='https://www.youtube.com/watch?v=Tif2a8vXeAA';">Listen to a song!</button>
+           <br>
+           <input type="button" onclick="slideDown()" value="Find out who I am!" />
+             
+           <p id="foo">Information Bar</p>
+             
+           <script type="text/javascript">
+             
+                   function slideDown() {
+                           $("#foo").html("My name is Daniel Hailozian!");
+                           $("#foo").slideDown();
+                }
+           </script>
+           
+           <h1> Still the Best Video Ever: </h1>
+             
+           <iframe class="youtube-player" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/moSFlvxnbgk" frameborder="0">
+        </body>
+</html>
